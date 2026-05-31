@@ -1,0 +1,1087 @@
+Listado de rutas de carpetas
+El número de serie del volumen es 1C25-F0EE
+C:.
+¦   .gitattributes
+¦   .gitignore
+¦   HELP.md
+¦   info.txt
+¦   mvnw
+¦   mvnw.cmd
+¦   pom.xml
+¦   
++---.mvn
+¦   +---wrapper
+¦           maven-wrapper.properties
+¦           
++---.vscode
+¦       launch.json
+¦       settings.json
+¦       
++---src
+¦   +---main
+¦   ¦   +---java
+¦   ¦   ¦   +---com
+¦   ¦   ¦       +---uade
+¦   ¦   ¦           +---tpo
+¦   ¦   ¦               +---e_commerce3
+¦   ¦   ¦                   ¦   ECommerce3Application.java
+¦   ¦   ¦                   ¦   
+¦   ¦   ¦                   +---config
+¦   ¦   ¦                   ¦       SecurityConfig.java
+¦   ¦   ¦                   ¦       
+¦   ¦   ¦                   +---controller
+¦   ¦   ¦                   ¦       AuthenticationController.java
+¦   ¦   ¦                   ¦       authenticationService.java
+¦   ¦   ¦                   ¦       ProductoController.java
+¦   ¦   ¦                   ¦       UsuarioController.java
+¦   ¦   ¦                   ¦       
+¦   ¦   ¦                   +---dto
+¦   ¦   ¦                   ¦       LoginRequest.java
+¦   ¦   ¦                   ¦       ProductoDTO.java
+¦   ¦   ¦                   ¦       ProductoRequestDTO.java
+¦   ¦   ¦                   ¦       ProductoResponseDTO.java
+¦   ¦   ¦                   ¦       ProductoUpdateDTO.java
+¦   ¦   ¦                   ¦       RegisterRequest.java
+¦   ¦   ¦                   ¦       UsuarioResponseDTO.java
+¦   ¦   ¦                   ¦       
+¦   ¦   ¦                   +---exception
+¦   ¦   ¦                   ¦       GlobalExceptionHandler.java
+¦   ¦   ¦                   ¦       PrecioNegativoException.java
+¦   ¦   ¦                   ¦       ProductoNotFoundException.java
+¦   ¦   ¦                   ¦       ResourceNotFoundException.java
+¦   ¦   ¦                   ¦       UsuarioNotFoundException.java
+¦   ¦   ¦                   ¦       
+¦   ¦   ¦                   +---model
+¦   ¦   ¦                   ¦       Autor.java
+¦   ¦   ¦                   ¦       Categoria.java
+¦   ¦   ¦                   ¦       Direccion.java
+¦   ¦   ¦                   ¦       Libro.java
+¦   ¦   ¦                   ¦       Producto.java
+¦   ¦   ¦                   ¦       Role.java
+¦   ¦   ¦                   ¦       Usuario.java
+¦   ¦   ¦                   ¦       Usuario2.java
+¦   ¦   ¦                   ¦       
+¦   ¦   ¦                   +---repository
+¦   ¦   ¦                   ¦       ProductoRepository.java
+¦   ¦   ¦                   ¦       UsuarioRepository.java
+¦   ¦   ¦                   ¦       UsuarioRepository2.java
+¦   ¦   ¦                   ¦       
+¦   ¦   ¦                   +---security
+¦   ¦   ¦                   ¦       JwtFilter.java
+¦   ¦   ¦                   ¦       JwtUtil.java
+¦   ¦   ¦                   ¦       
+¦   ¦   ¦                   +---service
+¦   ¦   ¦                           AuthenticationService.java
+¦   ¦   ¦                           ProductoService.java
+¦   ¦   ¦                           
+¦   ¦   +---resources
+¦   ¦       ¦   application.back
+¦   ¦       ¦   application.properties
+¦   ¦       ¦   
+¦   ¦       +---META-INF
+¦   ¦       ¦       additional-spring-configuration-metadata.json
+¦   ¦       ¦       
+¦   ¦       +---static
+¦   ¦       +---templates
+¦   +---test
+¦       +---java
+¦           +---com
+¦               +---uade
+¦                   +---tpo
+¦                       +---e_commerce3
+¦                               ECommerce3ApplicationTests.java
+¦                               
++---target
+    ¦   e-commerce3-0.0.1-SNAPSHOT.jar
+    ¦   e-commerce3-0.0.1-SNAPSHOT.jar.original
+    ¦   
+    +---classes
+    ¦   ¦   application.back
+    ¦   ¦   application.properties
+    ¦   ¦   
+    ¦   +---com
+    ¦   ¦   +---uade
+    ¦   ¦       +---tpo
+    ¦   ¦           +---e_commerce3
+    ¦   ¦               ¦   ECommerce3Application.class
+    ¦   ¦               ¦   
+    ¦   ¦               +---config
+    ¦   ¦               ¦       SecurityConfig.class
+    ¦   ¦               ¦       
+    ¦   ¦               +---controller
+    ¦   ¦               ¦       AuthenticationController.class
+    ¦   ¦               ¦       authenticationService.class
+    ¦   ¦               ¦       ProductoController.class
+    ¦   ¦               ¦       UsuarioController.class
+    ¦   ¦               ¦       
+    ¦   ¦               +---dto
+    ¦   ¦               ¦       LoginRequest$LoginRequestBuilder.class
+    ¦   ¦               ¦       LoginRequest.class
+    ¦   ¦               ¦       ProductoDTO.class
+    ¦   ¦               ¦       ProductoRequestDTO.class
+    ¦   ¦               ¦       ProductoResponseDTO.class
+    ¦   ¦               ¦       ProductoUpdateDTO.class
+    ¦   ¦               ¦       RegisterRequest$RegisterRequestBuilder.class
+    ¦   ¦               ¦       RegisterRequest.class
+    ¦   ¦               ¦       UsuarioResponseDTO.class
+    ¦   ¦               ¦       
+    ¦   ¦               +---exception
+    ¦   ¦               ¦       GlobalExceptionHandler.class
+    ¦   ¦               ¦       PrecioNegativoException.class
+    ¦   ¦               ¦       ProductoNotFoundException.class
+    ¦   ¦               ¦       ResourceNotFoundException.class
+    ¦   ¦               ¦       UsuarioNotFoundException.class
+    ¦   ¦               ¦       
+    ¦   ¦               +---model
+    ¦   ¦               ¦       Autor.class
+    ¦   ¦               ¦       Categoria.class
+    ¦   ¦               ¦       Direccion.class
+    ¦   ¦               ¦       Libro.class
+    ¦   ¦               ¦       Producto$ProductoBuilder.class
+    ¦   ¦               ¦       Producto.class
+    ¦   ¦               ¦       Role.class
+    ¦   ¦               ¦       Usuario$UsuarioBuilder.class
+    ¦   ¦               ¦       Usuario.class
+    ¦   ¦               ¦       Usuario2.class
+    ¦   ¦               ¦       
+    ¦   ¦               +---repository
+    ¦   ¦               ¦       ProductoRepository.class
+    ¦   ¦               ¦       UsuarioRepository.class
+    ¦   ¦               ¦       UsuarioRepository2.class
+    ¦   ¦               ¦       
+    ¦   ¦               +---security
+    ¦   ¦               ¦       JwtFilter.class
+    ¦   ¦               ¦       JwtUtil.class
+    ¦   ¦               ¦       
+    ¦   ¦               +---service
+    ¦   ¦                       AuthenticationService.class
+    ¦   ¦                       ProductoService.class
+    ¦   ¦                       
+    ¦   +---META-INF
+    ¦           additional-spring-configuration-metadata.json
+    ¦           
+    +---generated-sources
+    ¦   +---annotations
+    +---generated-test-sources
+    ¦   +---test-annotations
+    +---maven-archiver
+    ¦       pom.properties
+    ¦       
+    +---maven-status
+    ¦   +---maven-compiler-plugin
+    ¦       +---compile
+    ¦       ¦   +---default-compile
+    ¦       ¦           createdFiles.lst
+    ¦       ¦           inputFiles.lst
+    ¦       ¦           
+    ¦       +---testCompile
+    ¦           +---default-testCompile
+    ¦                   createdFiles.lst
+    ¦                   inputFiles.lst
+    ¦                   
+    +---spring-aot
+    ¦   +---main
+    ¦       +---classes
+    ¦       ¦   +---com
+    ¦       ¦   ¦   +---uade
+    ¦       ¦   ¦       +---tpo
+    ¦       ¦   ¦           +---e_commerce3
+    ¦       ¦   ¦               ¦   ECommerce3Application__ApplicationContextInitializer.class
+    ¦       ¦   ¦               ¦   ECommerce3Application__BeanDefinitions.class
+    ¦       ¦   ¦               ¦   ECommerce3Application__BeanFactoryRegistrations.class
+    ¦       ¦   ¦               ¦   
+    ¦       ¦   ¦               +---config
+    ¦       ¦   ¦               ¦       SecurityConfig$$SpringCGLIB$$0.class
+    ¦       ¦   ¦               ¦       SecurityConfig$$SpringCGLIB$$FastClass$$0.class
+    ¦       ¦   ¦               ¦       SecurityConfig$$SpringCGLIB$$FastClass$$1.class
+    ¦       ¦   ¦               ¦       SecurityConfig__BeanDefinitions.class
+    ¦       ¦   ¦               ¦       
+    ¦       ¦   ¦               +---controller
+    ¦       ¦   ¦               ¦       AuthenticationController__BeanDefinitions.class
+    ¦       ¦   ¦               ¦       ProductoController__Autowiring.class
+    ¦       ¦   ¦               ¦       ProductoController__BeanDefinitions.class
+    ¦       ¦   ¦               ¦       UsuarioController__BeanDefinitions.class
+    ¦       ¦   ¦               ¦       
+    ¦       ¦   ¦               +---exception
+    ¦       ¦   ¦               ¦       GlobalExceptionHandler__BeanDefinitions.class
+    ¦       ¦   ¦               ¦       
+    ¦       ¦   ¦               +---model
+    ¦       ¦   ¦               ¦       Autor__Accessor_fc4li7.class
+    ¦       ¦   ¦               ¦       Autor__Instantiator_fc4li7.class
+    ¦       ¦   ¦               ¦       Categoria__Accessor_bnuuen.class
+    ¦       ¦   ¦               ¦       Categoria__Instantiator_bnuuen.class
+    ¦       ¦   ¦               ¦       Libro__Accessor_fhyawu.class
+    ¦       ¦   ¦               ¦       Libro__Instantiator_fhyawu.class
+    ¦       ¦   ¦               ¦       Producto$ProductoBuilder__Accessor_js7f2d.class
+    ¦       ¦   ¦               ¦       Producto$ProductoBuilder__Instantiator_js7f2d.class
+    ¦       ¦   ¦               ¦       Producto__Accessor_a6ohng.class
+    ¦       ¦   ¦               ¦       Producto__Instantiator_a6ohng.class
+    ¦       ¦   ¦               ¦       Usuario$UsuarioBuilder__Accessor_tpo15l.class
+    ¦       ¦   ¦               ¦       Usuario$UsuarioBuilder__Instantiator_tpo15l.class
+    ¦       ¦   ¦               ¦       Usuario2__Accessor_9c6lu0.class
+    ¦       ¦   ¦               ¦       Usuario2__Instantiator_9c6lu0.class
+    ¦       ¦   ¦               ¦       Usuario__Accessor_r70712.class
+    ¦       ¦   ¦               ¦       Usuario__Instantiator_r70712.class
+    ¦       ¦   ¦               ¦       
+    ¦       ¦   ¦               +---repository
+    ¦       ¦   ¦               ¦       ProductoRepositoryImpl__AotRepository.class
+    ¦       ¦   ¦               ¦       ProductoRepository__BeanDefinitions$1.class
+    ¦       ¦   ¦               ¦       ProductoRepository__BeanDefinitions.class
+    ¦       ¦   ¦               ¦       UsuarioRepository2Impl__AotRepository.class
+    ¦       ¦   ¦               ¦       UsuarioRepository2__BeanDefinitions$1.class
+    ¦       ¦   ¦               ¦       UsuarioRepository2__BeanDefinitions.class
+    ¦       ¦   ¦               ¦       UsuarioRepositoryImpl__AotRepository.class
+    ¦       ¦   ¦               ¦       UsuarioRepository__BeanDefinitions$1.class
+    ¦       ¦   ¦               ¦       UsuarioRepository__BeanDefinitions.class
+    ¦       ¦   ¦               ¦       
+    ¦       ¦   ¦               +---security
+    ¦       ¦   ¦               ¦       JwtFilter__Autowiring.class
+    ¦       ¦   ¦               ¦       JwtFilter__BeanDefinitions.class
+    ¦       ¦   ¦               ¦       JwtUtil__Autowiring.class
+    ¦       ¦   ¦               ¦       JwtUtil__BeanDefinitions.class
+    ¦       ¦   ¦               ¦       
+    ¦       ¦   ¦               +---service
+    ¦       ¦   ¦                       AuthenticationService$$SpringCGLIB$$0.class
+    ¦       ¦   ¦                       AuthenticationService__BeanDefinitions.class
+    ¦       ¦   ¦                       ProductoService$$SpringCGLIB$$0.class
+    ¦       ¦   ¦                       ProductoService__Autowiring.class
+    ¦       ¦   ¦                       ProductoService__BeanDefinitions.class
+    ¦       ¦   ¦                       
+    ¦       ¦   +---org
+    ¦       ¦       +---springframework
+    ¦       ¦           +---aop
+    ¦       ¦           ¦   +---aspectj
+    ¦       ¦           ¦   ¦   +---annotation
+    ¦       ¦           ¦   ¦           AnnotationAwareAspectJAutoProxyCreator__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           
+    ¦       ¦           ¦   +---framework
+    ¦       ¦           ¦           ProxyConfig__BeanDefinitions.class
+    ¦       ¦           ¦           
+    ¦       ¦           +---boot
+    ¦       ¦           ¦   +---actuate
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦       +---endpoint
+    ¦       ¦           ¦   ¦       ¦   ¦   EndpointAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   ¦   
+    ¦       ¦           ¦   ¦       ¦   +---jackson
+    ¦       ¦           ¦   ¦       ¦   ¦       Jackson2EndpointAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   ¦       JacksonEndpointAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   ¦       
+    ¦       ¦           ¦   ¦       ¦   +---web
+    ¦       ¦           ¦   ¦       ¦           CorsEndpointProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦           WebEndpointAutoConfiguration__BeanDefinitions$WebEndpointServletConfiguration.class
+    ¦       ¦           ¦   ¦       ¦           WebEndpointAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦           WebEndpointProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦           
+    ¦       ¦           ¦   ¦       +---info
+    ¦       ¦           ¦   ¦       ¦       InfoContributorAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦       InfoContributorProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦       
+    ¦       ¦           ¦   ¦       +---web
+    ¦       ¦           ¦   ¦           +---server
+    ¦       ¦           ¦   ¦                   ManagementContextAutoConfiguration__BeanDefinitions$SameManagementContextConfiguration$EnableSameManagementContextConfiguration.class
+    ¦       ¦           ¦   ¦                   ManagementContextAutoConfiguration__BeanDefinitions$SameManagementContextConfiguration.class
+    ¦       ¦           ¦   ¦                   ManagementContextAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦                   
+    ¦       ¦           ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦   ¦   AutoConfigurationPackages__BeanDefinitions$BasePackages.class
+    ¦       ¦           ¦   ¦   ¦   AutoConfigurationPackages__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦   
+    ¦       ¦           ¦   ¦   +---aop
+    ¦       ¦           ¦   ¦   ¦       AopAutoConfiguration__BeanDefinitions$AspectJAutoProxyingConfiguration$CglibAutoProxyConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       AopAutoConfiguration__BeanDefinitions$AspectJAutoProxyingConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       AopAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       
+    ¦       ¦           ¦   ¦   +---availability
+    ¦       ¦           ¦   ¦   ¦       ApplicationAvailabilityAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       
+    ¦       ¦           ¦   ¦   +---context
+    ¦       ¦           ¦   ¦   ¦       ConfigurationPropertiesAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       LifecycleAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       LifecycleProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       PropertyPlaceholderAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       
+    ¦       ¦           ¦   ¦   +---info
+    ¦       ¦           ¦   ¦   ¦       ProjectInfoAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       ProjectInfoProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       
+    ¦       ¦           ¦   ¦   +---ssl
+    ¦       ¦           ¦   ¦   ¦       SslAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       SslProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       
+    ¦       ¦           ¦   ¦   +---task
+    ¦       ¦           ¦   ¦   ¦       TaskExecutionAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       TaskExecutionProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       TaskExecutorConfigurations__BeanDefinitions$AsyncConfigurerConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       TaskExecutorConfigurations__BeanDefinitions$BootstrapExecutorConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       TaskExecutorConfigurations__BeanDefinitions$SimpleAsyncTaskExecutorBuilderConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       TaskExecutorConfigurations__BeanDefinitions$TaskExecutorConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       TaskExecutorConfigurations__BeanDefinitions$ThreadPoolTaskExecutorBuilderConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       TaskExecutorConfigurations__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       TaskSchedulingAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       TaskSchedulingConfigurations__BeanDefinitions$SimpleAsyncTaskSchedulerBuilderConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       TaskSchedulingConfigurations__BeanDefinitions$ThreadPoolTaskSchedulerBuilderConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       TaskSchedulingConfigurations__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       TaskSchedulingProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       
+    ¦       ¦           ¦   ¦   +---web
+    ¦       ¦           ¦   ¦           WebProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           
+    ¦       ¦           ¦   +---context
+    ¦       ¦           ¦   ¦   +---properties
+    ¦       ¦           ¦   ¦           BoundConfigurationProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           ConfigurationPropertiesBinder__BeanDefinitions$ConfigurationPropertiesBinderFactory.class
+    ¦       ¦           ¦   ¦           ConfigurationPropertiesBinder__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           ConfigurationPropertiesBindingPostProcessor__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           
+    ¦       ¦           ¦   +---data
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦   ¦   +---metrics
+    ¦       ¦           ¦   ¦   ¦   ¦       DataMetricsProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦   ¦       DataRepositoryMetricsAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦   ¦       
+    ¦       ¦           ¦   ¦   ¦   +---web
+    ¦       ¦           ¦   ¦   ¦           DataWebAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦           DataWebProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦           
+    ¦       ¦           ¦   ¦   +---jpa
+    ¦       ¦           ¦   ¦       +---autoconfigure
+    ¦       ¦           ¦   ¦               DataJpaRepositoriesAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               
+    ¦       ¦           ¦   +---health
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦       +---actuate
+    ¦       ¦           ¦   ¦       ¦   +---endpoint
+    ¦       ¦           ¦   ¦       ¦           AvailabilityProbesAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦           HealthEndpointAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦           HealthEndpointConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦           HealthEndpointProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦           HealthEndpointWebExtensionConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦           
+    ¦       ¦           ¦   ¦       +---application
+    ¦       ¦           ¦   ¦       ¦       AvailabilityHealthContributorAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦       DiskSpaceHealthContributorAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦       DiskSpaceHealthIndicatorProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦       SslHealthContributorAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦       SslHealthIndicatorProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦       
+    ¦       ¦           ¦   ¦       +---contributor
+    ¦       ¦           ¦   ¦       ¦       HealthContributorAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦       
+    ¦       ¦           ¦   ¦       +---registry
+    ¦       ¦           ¦   ¦               HealthContributorRegistryAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               
+    ¦       ¦           ¦   +---hibernate
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦           HibernateJpaAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           HibernateJpaConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           HibernateProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           
+    ¦       ¦           ¦   +---http
+    ¦       ¦           ¦   ¦   +---converter
+    ¦       ¦           ¦   ¦       +---autoconfigure
+    ¦       ¦           ¦   ¦               HttpMessageConvertersAutoConfiguration__BeanDefinitions$StringHttpMessageConverterConfiguration.class
+    ¦       ¦           ¦   ¦               HttpMessageConvertersAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               HttpMessageConvertersProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               Jackson2HttpMessageConvertersConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               JacksonHttpMessageConvertersConfiguration__BeanDefinitions$JacksonJsonHttpMessageConverterConfiguration.class
+    ¦       ¦           ¦   ¦               JacksonHttpMessageConvertersConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               
+    ¦       ¦           ¦   +---jackson
+    ¦       ¦           ¦   ¦   ¦   JacksonMixinModuleEntries__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦   
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦           JacksonAutoConfiguration__BeanDefinitions$JacksonJsonMapperBuilderCustomizerConfiguration.class
+    ¦       ¦           ¦   ¦           JacksonAutoConfiguration__BeanDefinitions$JacksonMixinConfiguration.class
+    ¦       ¦           ¦   ¦           JacksonAutoConfiguration__BeanDefinitions$JsonProblemDetailsConfiguration.class
+    ¦       ¦           ¦   ¦           JacksonAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           JacksonProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           
+    ¦       ¦           ¦   +---jdbc
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦       ¦   DataSourceAutoConfiguration__BeanDefinitions$PooledDataSourceConfiguration.class
+    ¦       ¦           ¦   ¦       ¦   DataSourceAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   DataSourceConfiguration__BeanDefinitions$Hikari.class
+    ¦       ¦           ¦   ¦       ¦   DataSourceConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   DataSourceInitializationAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   DataSourcePoolMetadataProvidersConfiguration__BeanDefinitions$HikariPoolDataSourceMetadataProviderConfiguration.class
+    ¦       ¦           ¦   ¦       ¦   DataSourcePoolMetadataProvidersConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   DataSourceProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   DataSourceTransactionManagerAutoConfiguration__BeanDefinitions$JdbcTransactionManagerConfiguration.class
+    ¦       ¦           ¦   ¦       ¦   DataSourceTransactionManagerAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   JdbcClientAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   JdbcProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   JdbcTemplateAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   JdbcTemplateConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   NamedParameterJdbcTemplateConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   
+    ¦       ¦           ¦   ¦       +---health
+    ¦       ¦           ¦   ¦       ¦       DataSourceHealthContributorAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦       DataSourceHealthIndicatorProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦       
+    ¦       ¦           ¦   ¦       +---metrics
+    ¦       ¦           ¦   ¦               DataSourcePoolMetricsAutoConfiguration__BeanDefinitions$DataSourcePoolMetadataMetricsConfiguration.class
+    ¦       ¦           ¦   ¦               DataSourcePoolMetricsAutoConfiguration__BeanDefinitions$HikariDataSourceMetricsConfiguration.class
+    ¦       ¦           ¦   ¦               DataSourcePoolMetricsAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               
+    ¦       ¦           ¦   +---jpa
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦           JpaBaseConfiguration__BeanDefinitions$JpaWebConfiguration.class
+    ¦       ¦           ¦   ¦           JpaBaseConfiguration__BeanDefinitions$PersistenceManagedTypesConfiguration.class
+    ¦       ¦           ¦   ¦           JpaBaseConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           JpaProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           
+    ¦       ¦           ¦   +---micrometer
+    ¦       ¦           ¦   ¦   +---metrics
+    ¦       ¦           ¦   ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦   ¦       ¦   CompositeMeterRegistryAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       ¦   MetricsAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       ¦   MetricsProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       ¦   
+    ¦       ¦           ¦   ¦   ¦       +---export
+    ¦       ¦           ¦   ¦   ¦       ¦   +---simple
+    ¦       ¦           ¦   ¦   ¦       ¦           SimpleMetricsExportAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       ¦           SimpleProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       ¦           
+    ¦       ¦           ¦   ¦   ¦       +---jvm
+    ¦       ¦           ¦   ¦   ¦       ¦       JvmMetricsAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       ¦       
+    ¦       ¦           ¦   ¦   ¦       +---logging
+    ¦       ¦           ¦   ¦   ¦       ¦   +---logback
+    ¦       ¦           ¦   ¦   ¦       ¦           LogbackMetricsAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       ¦           
+    ¦       ¦           ¦   ¦   ¦       +---ssl
+    ¦       ¦           ¦   ¦   ¦       ¦       SslMetricsAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       ¦       
+    ¦       ¦           ¦   ¦   ¦       +---startup
+    ¦       ¦           ¦   ¦   ¦       ¦       StartupTimeMetricsListenerAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       ¦       
+    ¦       ¦           ¦   ¦   ¦       +---system
+    ¦       ¦           ¦   ¦   ¦       ¦       SystemMetricsAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       ¦       
+    ¦       ¦           ¦   ¦   ¦       +---task
+    ¦       ¦           ¦   ¦   ¦               TaskExecutorMetricsAutoConfiguration__Autowiring.class
+    ¦       ¦           ¦   ¦   ¦               TaskExecutorMetricsAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦               
+    ¦       ¦           ¦   ¦   +---observation
+    ¦       ¦           ¦   ¦       +---autoconfigure
+    ¦       ¦           ¦   ¦               ObservationAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               ObservationProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               ScheduledTasksObservationAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               
+    ¦       ¦           ¦   +---persistence
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦           PersistenceExceptionTranslationAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           
+    ¦       ¦           ¦   +---security
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦       ¦   SecurityAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   SecurityProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   
+    ¦       ¦           ¦   ¦       +---actuate
+    ¦       ¦           ¦   ¦       ¦   +---web
+    ¦       ¦           ¦   ¦       ¦       +---servlet
+    ¦       ¦           ¦   ¦       ¦               SecurityRequestMatchersManagementContextConfiguration__BeanDefinitions$MvcRequestMatcherConfiguration.class
+    ¦       ¦           ¦   ¦       ¦               SecurityRequestMatchersManagementContextConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦               
+    ¦       ¦           ¦   ¦       +---web
+    ¦       ¦           ¦   ¦           +---servlet
+    ¦       ¦           ¦   ¦                   SecurityFilterAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦                   SecurityFilterProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦                   ServletWebSecurityAutoConfiguration__BeanDefinitions$PathPatternRequestMatcherBuilderConfiguration.class
+    ¦       ¦           ¦   ¦                   ServletWebSecurityAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦                   
+    ¦       ¦           ¦   +---servlet
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦       ¦   HttpEncodingAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   MultipartAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   MultipartProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   ServletEncodingProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   
+    ¦       ¦           ¦   ¦       +---actuate
+    ¦       ¦           ¦   ¦           +---web
+    ¦       ¦           ¦   ¦                   ServletEndpointManagementContextConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦                   ServletManagementContextAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦                   
+    ¦       ¦           ¦   +---sql
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦   ¦   +---init
+    ¦       ¦           ¦   ¦   ¦           SqlInitializationProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦           
+    ¦       ¦           ¦   ¦   +---init
+    ¦       ¦           ¦   ¦       +---dependency
+    ¦       ¦           ¦   ¦               DatabaseInitializationDependencyConfigurer__BeanDefinitions$DependsOnDatabaseInitializationPostProcessor.class
+    ¦       ¦           ¦   ¦               DatabaseInitializationDependencyConfigurer__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               
+    ¦       ¦           ¦   +---tomcat
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦       ¦   TomcatServerProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   TomcatWebServerConfiguration__BeanDefinitions$TomcatWebSocketConfiguration.class
+    ¦       ¦           ¦   ¦       ¦   TomcatWebServerConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   
+    ¦       ¦           ¦   ¦       +---metrics
+    ¦       ¦           ¦   ¦       ¦       TomcatMetricsAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦       
+    ¦       ¦           ¦   ¦       +---servlet
+    ¦       ¦           ¦   ¦               TomcatServletWebServerAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               
+    ¦       ¦           ¦   +---transaction
+    ¦       ¦           ¦   ¦   +---autoconfigure
+    ¦       ¦           ¦   ¦   ¦       TransactionAutoConfiguration__BeanDefinitions$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       TransactionAutoConfiguration__BeanDefinitions$EnableTransactionManagementConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       TransactionAutoConfiguration__BeanDefinitions$TransactionTemplateConfiguration.class
+    ¦       ¦           ¦   ¦   ¦       TransactionAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       TransactionManagerCustomizationAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       TransactionProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       
+    ¦       ¦           ¦   ¦   +---jta
+    ¦       ¦           ¦   ¦       +---autoconfigure
+    ¦       ¦           ¦   ¦               JtaAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               
+    ¦       ¦           ¦   +---validation
+    ¦       ¦           ¦   ¦   +---beanvalidation
+    ¦       ¦           ¦   ¦           MethodValidationExcludeFilter__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           
+    ¦       ¦           ¦   +---web
+    ¦       ¦           ¦   ¦   +---error
+    ¦       ¦           ¦   ¦   ¦       ErrorPageRegistrarBeanPostProcessor__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       
+    ¦       ¦           ¦   ¦   +---server
+    ¦       ¦           ¦   ¦       ¦   WebServerFactoryCustomizerBeanPostProcessor__BeanDefinitions.class
+    ¦       ¦           ¦   ¦       ¦   
+    ¦       ¦           ¦   ¦       +---autoconfigure
+    ¦       ¦           ¦   ¦           ¦   ServerProperties__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           ¦   
+    ¦       ¦           ¦   ¦           +---servlet
+    ¦       ¦           ¦   ¦                   ServletWebServerConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦   ¦                   
+    ¦       ¦           ¦   +---webmvc
+    ¦       ¦           ¦       +---autoconfigure
+    ¦       ¦           ¦           ¦   DispatcherServletAutoConfiguration__BeanDefinitions$DispatcherServletConfiguration.class
+    ¦       ¦           ¦           ¦   DispatcherServletAutoConfiguration__BeanDefinitions$DispatcherServletRegistrationConfiguration.class
+    ¦       ¦           ¦           ¦   DispatcherServletAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦           ¦   WebMvcAutoConfiguration_EnableWebMvcConfiguration__Autowiring.class
+    ¦       ¦           ¦           ¦   WebMvcAutoConfiguration__BeanDefinitions$EnableWebMvcConfiguration.class
+    ¦       ¦           ¦           ¦   WebMvcAutoConfiguration__BeanDefinitions$WebMvcAutoConfigurationAdapter.class
+    ¦       ¦           ¦           ¦   WebMvcAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦           ¦   WebMvcObservationAutoConfiguration__BeanDefinitions$MeterFilterConfiguration.class
+    ¦       ¦           ¦           ¦   WebMvcObservationAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦           ¦   WebMvcProperties__BeanDefinitions.class
+    ¦       ¦           ¦           ¦   
+    ¦       ¦           ¦           +---actuate
+    ¦       ¦           ¦           ¦   +---endpoint
+    ¦       ¦           ¦           ¦   ¦   +---web
+    ¦       ¦           ¦           ¦   ¦           WebMvcHealthEndpointExtensionAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦           ¦   ¦           
+    ¦       ¦           ¦           ¦   +---web
+    ¦       ¦           ¦           ¦           WebMvcEndpointManagementContextConfiguration__BeanDefinitions$HealthConfiguration.class
+    ¦       ¦           ¦           ¦           WebMvcEndpointManagementContextConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦           ¦           
+    ¦       ¦           ¦           +---error
+    ¦       ¦           ¦                   ErrorMvcAutoConfiguration__BeanDefinitions$DefaultErrorViewResolverConfiguration.class
+    ¦       ¦           ¦                   ErrorMvcAutoConfiguration__BeanDefinitions$WhitelabelErrorViewConfiguration.class
+    ¦       ¦           ¦                   ErrorMvcAutoConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦                   
+    ¦       ¦           +---context
+    ¦       ¦           ¦   +---event
+    ¦       ¦           ¦           DefaultEventListenerFactory__BeanDefinitions.class
+    ¦       ¦           ¦           EventListenerMethodProcessor__BeanDefinitions.class
+    ¦       ¦           ¦           
+    ¦       ¦           +---data
+    ¦       ¦           ¦   +---jpa
+    ¦       ¦           ¦   ¦   +---mapping
+    ¦       ¦           ¦   ¦   ¦       JpaMetamodelMappingContext__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦       
+    ¦       ¦           ¦   ¦   +---repository
+    ¦       ¦           ¦   ¦   ¦   +---support
+    ¦       ¦           ¦   ¦   ¦           DefaultJpaContext__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦           JpaEvaluationContextExtension__BeanDefinitions.class
+    ¦       ¦           ¦   ¦   ¦           JpaRepositoryFactoryBean__Autowiring.class
+    ¦       ¦           ¦   ¦   ¦           JpaRepositoryFactoryBean__Autowiring1.class
+    ¦       ¦           ¦   ¦   ¦           JpaRepositoryFactoryBean__Autowiring2.class
+    ¦       ¦           ¦   ¦   ¦           
+    ¦       ¦           ¦   ¦   +---util
+    ¦       ¦           ¦   ¦           JpaMetamodelCacheCleanup__BeanDefinitions.class
+    ¦       ¦           ¦   ¦           
+    ¦       ¦           ¦   +---repository
+    ¦       ¦           ¦   ¦   +---core
+    ¦       ¦           ¦   ¦       +---support
+    ¦       ¦           ¦   ¦               PropertiesBasedNamedQueries__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               RepositoryComposition__BeanDefinitions$RepositoryFragments.class
+    ¦       ¦           ¦   ¦               RepositoryComposition__BeanDefinitions.class
+    ¦       ¦           ¦   ¦               
+    ¦       ¦           ¦   +---web
+    ¦       ¦           ¦       +---config
+    ¦       ¦           ¦               ProjectingArgumentResolverRegistrar__BeanDefinitions.class
+    ¦       ¦           ¦               SpringDataJackson3Configuration__Autowiring.class
+    ¦       ¦           ¦               SpringDataJackson3Configuration__BeanDefinitions.class
+    ¦       ¦           ¦               SpringDataJacksonConfiguration__Autowiring.class
+    ¦       ¦           ¦               SpringDataJacksonConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦               SpringDataWebConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦               
+    ¦       ¦           +---orm
+    ¦       ¦           ¦   +---jpa
+    ¦       ¦           ¦           SharedEntityManagerCreator__BeanDefinitions.class
+    ¦       ¦           ¦           
+    ¦       ¦           +---security
+    ¦       ¦           ¦   +---config
+    ¦       ¦           ¦       +---annotation
+    ¦       ¦           ¦           +---authentication
+    ¦       ¦           ¦           ¦   +---configuration
+    ¦       ¦           ¦           ¦           AuthenticationConfiguration__Autowiring.class
+    ¦       ¦           ¦           ¦           AuthenticationConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦           ¦           
+    ¦       ¦           ¦           +---configuration
+    ¦       ¦           ¦           ¦       ObjectPostProcessorConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦           ¦       
+    ¦       ¦           ¦           +---web
+    ¦       ¦           ¦               +---configuration
+    ¦       ¦           ¦                       HttpSecurityConfiguration__Autowiring.class
+    ¦       ¦           ¦                       HttpSecurityConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦                       ObservationConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦                       WebMvcSecurityConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦                       WebSecurityConfiguration__Autowiring.class
+    ¦       ¦           ¦                       WebSecurityConfiguration__BeanDefinitions$CompositeFilterChainProxy.class
+    ¦       ¦           ¦                       WebSecurityConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦                       
+    ¦       ¦           +---transaction
+    ¦       ¦           ¦   +---annotation
+    ¦       ¦           ¦           AbstractTransactionManagementConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦           ProxyTransactionManagementConfiguration__Autowiring.class
+    ¦       ¦           ¦           ProxyTransactionManagementConfiguration__BeanDefinitions.class
+    ¦       ¦           ¦           
+    ¦       ¦           +---web
+    ¦       ¦               +---filter
+    ¦       ¦                       ServletRequestPathFilter__BeanDefinitions.class
+    ¦       ¦                       
+    ¦       +---resources
+    ¦       ¦   +---com
+    ¦       ¦   ¦   +---uade
+    ¦       ¦   ¦       +---tpo
+    ¦       ¦   ¦           +---e_commerce3
+    ¦       ¦   ¦               +---repository
+    ¦       ¦   ¦                       ProductoRepository.json
+    ¦       ¦   ¦                       UsuarioRepository.json
+    ¦       ¦   ¦                       UsuarioRepository2.json
+    ¦       ¦   ¦                       
+    ¦       ¦   +---META-INF
+    ¦       ¦       +---native-image
+    ¦       ¦           +---com.uade.tpo
+    ¦       ¦               +---e-commerce3
+    ¦       ¦                       native-image.properties
+    ¦       ¦                       reachability-metadata.json
+    ¦       ¦                       
+    ¦       +---sources
+    ¦           +---com
+    ¦           ¦   +---uade
+    ¦           ¦       +---tpo
+    ¦           ¦           +---e_commerce3
+    ¦           ¦               ¦   ECommerce3Application__ApplicationContextInitializer.java
+    ¦           ¦               ¦   ECommerce3Application__BeanDefinitions.java
+    ¦           ¦               ¦   ECommerce3Application__BeanFactoryRegistrations.java
+    ¦           ¦               ¦   
+    ¦           ¦               +---config
+    ¦           ¦               ¦       SecurityConfig__BeanDefinitions.java
+    ¦           ¦               ¦       
+    ¦           ¦               +---controller
+    ¦           ¦               ¦       AuthenticationController__BeanDefinitions.java
+    ¦           ¦               ¦       ProductoController__Autowiring.java
+    ¦           ¦               ¦       ProductoController__BeanDefinitions.java
+    ¦           ¦               ¦       UsuarioController__BeanDefinitions.java
+    ¦           ¦               ¦       
+    ¦           ¦               +---exception
+    ¦           ¦               ¦       GlobalExceptionHandler__BeanDefinitions.java
+    ¦           ¦               ¦       
+    ¦           ¦               +---repository
+    ¦           ¦               ¦       ProductoRepositoryImpl__AotRepository.java
+    ¦           ¦               ¦       ProductoRepository__BeanDefinitions.java
+    ¦           ¦               ¦       UsuarioRepository2Impl__AotRepository.java
+    ¦           ¦               ¦       UsuarioRepository2__BeanDefinitions.java
+    ¦           ¦               ¦       UsuarioRepositoryImpl__AotRepository.java
+    ¦           ¦               ¦       UsuarioRepository__BeanDefinitions.java
+    ¦           ¦               ¦       
+    ¦           ¦               +---security
+    ¦           ¦               ¦       JwtFilter__Autowiring.java
+    ¦           ¦               ¦       JwtFilter__BeanDefinitions.java
+    ¦           ¦               ¦       JwtUtil__Autowiring.java
+    ¦           ¦               ¦       JwtUtil__BeanDefinitions.java
+    ¦           ¦               ¦       
+    ¦           ¦               +---service
+    ¦           ¦                       AuthenticationService__BeanDefinitions.java
+    ¦           ¦                       ProductoService__Autowiring.java
+    ¦           ¦                       ProductoService__BeanDefinitions.java
+    ¦           ¦                       
+    ¦           +---org
+    ¦               +---springframework
+    ¦                   +---aop
+    ¦                   ¦   +---aspectj
+    ¦                   ¦   ¦   +---annotation
+    ¦                   ¦   ¦           AnnotationAwareAspectJAutoProxyCreator__BeanDefinitions.java
+    ¦                   ¦   ¦           
+    ¦                   ¦   +---framework
+    ¦                   ¦           ProxyConfig__BeanDefinitions.java
+    ¦                   ¦           
+    ¦                   +---boot
+    ¦                   ¦   +---actuate
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦       +---endpoint
+    ¦                   ¦   ¦       ¦   ¦   EndpointAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   ¦   
+    ¦                   ¦   ¦       ¦   +---jackson
+    ¦                   ¦   ¦       ¦   ¦       Jackson2EndpointAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   ¦       JacksonEndpointAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   ¦       
+    ¦                   ¦   ¦       ¦   +---web
+    ¦                   ¦   ¦       ¦           CorsEndpointProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦           WebEndpointAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦           WebEndpointProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦           
+    ¦                   ¦   ¦       +---info
+    ¦                   ¦   ¦       ¦       InfoContributorAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦       InfoContributorProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦       
+    ¦                   ¦   ¦       +---web
+    ¦                   ¦   ¦           +---server
+    ¦                   ¦   ¦                   ManagementContextAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦                   
+    ¦                   ¦   +---autoconfigure
+    ¦                   ¦   ¦   ¦   AutoConfigurationPackages__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦   
+    ¦                   ¦   ¦   +---aop
+    ¦                   ¦   ¦   ¦       AopAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       
+    ¦                   ¦   ¦   +---availability
+    ¦                   ¦   ¦   ¦       ApplicationAvailabilityAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       
+    ¦                   ¦   ¦   +---context
+    ¦                   ¦   ¦   ¦       ConfigurationPropertiesAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       LifecycleAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       LifecycleProperties__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       PropertyPlaceholderAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       
+    ¦                   ¦   ¦   +---info
+    ¦                   ¦   ¦   ¦       ProjectInfoAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       ProjectInfoProperties__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       
+    ¦                   ¦   ¦   +---ssl
+    ¦                   ¦   ¦   ¦       SslAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       SslProperties__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       
+    ¦                   ¦   ¦   +---task
+    ¦                   ¦   ¦   ¦       TaskExecutionAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       TaskExecutionProperties__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       TaskExecutorConfigurations__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       TaskSchedulingAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       TaskSchedulingConfigurations__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       TaskSchedulingProperties__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       
+    ¦                   ¦   ¦   +---web
+    ¦                   ¦   ¦           WebProperties__BeanDefinitions.java
+    ¦                   ¦   ¦           
+    ¦                   ¦   +---context
+    ¦                   ¦   ¦   +---properties
+    ¦                   ¦   ¦           BoundConfigurationProperties__BeanDefinitions.java
+    ¦                   ¦   ¦           ConfigurationPropertiesBinder__BeanDefinitions.java
+    ¦                   ¦   ¦           ConfigurationPropertiesBindingPostProcessor__BeanDefinitions.java
+    ¦                   ¦   ¦           
+    ¦                   ¦   +---data
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦   ¦   +---metrics
+    ¦                   ¦   ¦   ¦   ¦       DataMetricsProperties__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦   ¦       DataRepositoryMetricsAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦   ¦       
+    ¦                   ¦   ¦   ¦   +---web
+    ¦                   ¦   ¦   ¦           DataWebAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦           DataWebProperties__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦           
+    ¦                   ¦   ¦   +---jpa
+    ¦                   ¦   ¦       +---autoconfigure
+    ¦                   ¦   ¦               DataJpaRepositoriesAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦               
+    ¦                   ¦   +---health
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦       +---actuate
+    ¦                   ¦   ¦       ¦   +---endpoint
+    ¦                   ¦   ¦       ¦           AvailabilityProbesAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦           HealthEndpointAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦           HealthEndpointConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦           HealthEndpointProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦           HealthEndpointWebExtensionConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦           
+    ¦                   ¦   ¦       +---application
+    ¦                   ¦   ¦       ¦       AvailabilityHealthContributorAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦       DiskSpaceHealthContributorAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦       DiskSpaceHealthIndicatorProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦       SslHealthContributorAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦       SslHealthIndicatorProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦       
+    ¦                   ¦   ¦       +---contributor
+    ¦                   ¦   ¦       ¦       HealthContributorAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦       
+    ¦                   ¦   ¦       +---registry
+    ¦                   ¦   ¦               HealthContributorRegistryAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦               
+    ¦                   ¦   +---hibernate
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦           HibernateJpaAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦           HibernateJpaConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦           HibernateProperties__BeanDefinitions.java
+    ¦                   ¦   ¦           
+    ¦                   ¦   +---http
+    ¦                   ¦   ¦   +---converter
+    ¦                   ¦   ¦       +---autoconfigure
+    ¦                   ¦   ¦               HttpMessageConvertersAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦               HttpMessageConvertersProperties__BeanDefinitions.java
+    ¦                   ¦   ¦               Jackson2HttpMessageConvertersConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦               JacksonHttpMessageConvertersConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦               
+    ¦                   ¦   +---jackson
+    ¦                   ¦   ¦   ¦   JacksonMixinModuleEntries__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦   
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦           JacksonAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦           JacksonProperties__BeanDefinitions.java
+    ¦                   ¦   ¦           
+    ¦                   ¦   +---jdbc
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦       ¦   DataSourceAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   DataSourceConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   DataSourceInitializationAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   DataSourcePoolMetadataProvidersConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   DataSourceProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   DataSourceTransactionManagerAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   JdbcClientAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   JdbcProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   JdbcTemplateAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   JdbcTemplateConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   NamedParameterJdbcTemplateConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   
+    ¦                   ¦   ¦       +---health
+    ¦                   ¦   ¦       ¦       DataSourceHealthContributorAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦       DataSourceHealthIndicatorProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦       
+    ¦                   ¦   ¦       +---metrics
+    ¦                   ¦   ¦               DataSourcePoolMetricsAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦               
+    ¦                   ¦   +---jpa
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦           JpaBaseConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦           JpaProperties__BeanDefinitions.java
+    ¦                   ¦   ¦           
+    ¦                   ¦   +---micrometer
+    ¦                   ¦   ¦   +---metrics
+    ¦                   ¦   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦   ¦       ¦   CompositeMeterRegistryAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       ¦   MetricsAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       ¦   MetricsProperties__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       ¦   
+    ¦                   ¦   ¦   ¦       +---export
+    ¦                   ¦   ¦   ¦       ¦   +---simple
+    ¦                   ¦   ¦   ¦       ¦           SimpleMetricsExportAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       ¦           SimpleProperties__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       ¦           
+    ¦                   ¦   ¦   ¦       +---jvm
+    ¦                   ¦   ¦   ¦       ¦       JvmMetricsAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       ¦       
+    ¦                   ¦   ¦   ¦       +---logging
+    ¦                   ¦   ¦   ¦       ¦   +---logback
+    ¦                   ¦   ¦   ¦       ¦           LogbackMetricsAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       ¦           
+    ¦                   ¦   ¦   ¦       +---ssl
+    ¦                   ¦   ¦   ¦       ¦       SslMetricsAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       ¦       
+    ¦                   ¦   ¦   ¦       +---startup
+    ¦                   ¦   ¦   ¦       ¦       StartupTimeMetricsListenerAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       ¦       
+    ¦                   ¦   ¦   ¦       +---system
+    ¦                   ¦   ¦   ¦       ¦       SystemMetricsAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       ¦       
+    ¦                   ¦   ¦   ¦       +---task
+    ¦                   ¦   ¦   ¦               TaskExecutorMetricsAutoConfiguration__Autowiring.java
+    ¦                   ¦   ¦   ¦               TaskExecutorMetricsAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦               
+    ¦                   ¦   ¦   +---observation
+    ¦                   ¦   ¦       +---autoconfigure
+    ¦                   ¦   ¦               ObservationAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦               ObservationProperties__BeanDefinitions.java
+    ¦                   ¦   ¦               ScheduledTasksObservationAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦               
+    ¦                   ¦   +---persistence
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦           PersistenceExceptionTranslationAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦           
+    ¦                   ¦   +---security
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦       ¦   SecurityAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   SecurityProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   
+    ¦                   ¦   ¦       +---actuate
+    ¦                   ¦   ¦       ¦   +---web
+    ¦                   ¦   ¦       ¦       +---servlet
+    ¦                   ¦   ¦       ¦               SecurityRequestMatchersManagementContextConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦               
+    ¦                   ¦   ¦       +---web
+    ¦                   ¦   ¦           +---servlet
+    ¦                   ¦   ¦                   SecurityFilterAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦                   SecurityFilterProperties__BeanDefinitions.java
+    ¦                   ¦   ¦                   ServletWebSecurityAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦                   
+    ¦                   ¦   +---servlet
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦       ¦   HttpEncodingAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   MultipartAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   MultipartProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   ServletEncodingProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   
+    ¦                   ¦   ¦       +---actuate
+    ¦                   ¦   ¦           +---web
+    ¦                   ¦   ¦                   ServletEndpointManagementContextConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦                   ServletManagementContextAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦                   
+    ¦                   ¦   +---sql
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦   ¦   +---init
+    ¦                   ¦   ¦   ¦           SqlInitializationProperties__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦           
+    ¦                   ¦   ¦   +---init
+    ¦                   ¦   ¦       +---dependency
+    ¦                   ¦   ¦               DatabaseInitializationDependencyConfigurer__BeanDefinitions.java
+    ¦                   ¦   ¦               
+    ¦                   ¦   +---tomcat
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦       ¦   TomcatServerProperties__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   TomcatWebServerConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   
+    ¦                   ¦   ¦       +---metrics
+    ¦                   ¦   ¦       ¦       TomcatMetricsAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦       
+    ¦                   ¦   ¦       +---servlet
+    ¦                   ¦   ¦               TomcatServletWebServerAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦               
+    ¦                   ¦   +---transaction
+    ¦                   ¦   ¦   +---autoconfigure
+    ¦                   ¦   ¦   ¦       TransactionAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       TransactionManagerCustomizationAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       TransactionProperties__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       
+    ¦                   ¦   ¦   +---jta
+    ¦                   ¦   ¦       +---autoconfigure
+    ¦                   ¦   ¦               JtaAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦               
+    ¦                   ¦   +---validation
+    ¦                   ¦   ¦   +---beanvalidation
+    ¦                   ¦   ¦           MethodValidationExcludeFilter__BeanDefinitions.java
+    ¦                   ¦   ¦           
+    ¦                   ¦   +---web
+    ¦                   ¦   ¦   +---error
+    ¦                   ¦   ¦   ¦       ErrorPageRegistrarBeanPostProcessor__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       
+    ¦                   ¦   ¦   +---server
+    ¦                   ¦   ¦       ¦   WebServerFactoryCustomizerBeanPostProcessor__BeanDefinitions.java
+    ¦                   ¦   ¦       ¦   
+    ¦                   ¦   ¦       +---autoconfigure
+    ¦                   ¦   ¦           ¦   ServerProperties__BeanDefinitions.java
+    ¦                   ¦   ¦           ¦   
+    ¦                   ¦   ¦           +---servlet
+    ¦                   ¦   ¦                   ServletWebServerConfiguration__BeanDefinitions.java
+    ¦                   ¦   ¦                   
+    ¦                   ¦   +---webmvc
+    ¦                   ¦       +---autoconfigure
+    ¦                   ¦           ¦   DispatcherServletAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦           ¦   WebMvcAutoConfiguration_EnableWebMvcConfiguration__Autowiring.java
+    ¦                   ¦           ¦   WebMvcAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦           ¦   WebMvcObservationAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦           ¦   WebMvcProperties__BeanDefinitions.java
+    ¦                   ¦           ¦   
+    ¦                   ¦           +---actuate
+    ¦                   ¦           ¦   +---endpoint
+    ¦                   ¦           ¦   ¦   +---web
+    ¦                   ¦           ¦   ¦           WebMvcHealthEndpointExtensionAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦           ¦   ¦           
+    ¦                   ¦           ¦   +---web
+    ¦                   ¦           ¦           WebMvcEndpointManagementContextConfiguration__BeanDefinitions.java
+    ¦                   ¦           ¦           
+    ¦                   ¦           +---error
+    ¦                   ¦                   ErrorMvcAutoConfiguration__BeanDefinitions.java
+    ¦                   ¦                   
+    ¦                   +---context
+    ¦                   ¦   +---event
+    ¦                   ¦           DefaultEventListenerFactory__BeanDefinitions.java
+    ¦                   ¦           EventListenerMethodProcessor__BeanDefinitions.java
+    ¦                   ¦           
+    ¦                   +---data
+    ¦                   ¦   +---jpa
+    ¦                   ¦   ¦   +---mapping
+    ¦                   ¦   ¦   ¦       JpaMetamodelMappingContext__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦       
+    ¦                   ¦   ¦   +---repository
+    ¦                   ¦   ¦   ¦   +---support
+    ¦                   ¦   ¦   ¦           DefaultJpaContext__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦           JpaEvaluationContextExtension__BeanDefinitions.java
+    ¦                   ¦   ¦   ¦           JpaRepositoryFactoryBean__Autowiring.java
+    ¦                   ¦   ¦   ¦           JpaRepositoryFactoryBean__Autowiring1.java
+    ¦                   ¦   ¦   ¦           JpaRepositoryFactoryBean__Autowiring2.java
+    ¦                   ¦   ¦   ¦           
+    ¦                   ¦   ¦   +---util
+    ¦                   ¦   ¦           JpaMetamodelCacheCleanup__BeanDefinitions.java
+    ¦                   ¦   ¦           
+    ¦                   ¦   +---repository
+    ¦                   ¦   ¦   +---core
+    ¦                   ¦   ¦       +---support
+    ¦                   ¦   ¦               PropertiesBasedNamedQueries__BeanDefinitions.java
+    ¦                   ¦   ¦               RepositoryComposition__BeanDefinitions.java
+    ¦                   ¦   ¦               
+    ¦                   ¦   +---web
+    ¦                   ¦       +---config
+    ¦                   ¦               ProjectingArgumentResolverRegistrar__BeanDefinitions.java
+    ¦                   ¦               SpringDataJackson3Configuration__Autowiring.java
+    ¦                   ¦               SpringDataJackson3Configuration__BeanDefinitions.java
+    ¦                   ¦               SpringDataJacksonConfiguration__Autowiring.java
+    ¦                   ¦               SpringDataJacksonConfiguration__BeanDefinitions.java
+    ¦                   ¦               SpringDataWebConfiguration__BeanDefinitions.java
+    ¦                   ¦               
+    ¦                   +---orm
+    ¦                   ¦   +---jpa
+    ¦                   ¦           SharedEntityManagerCreator__BeanDefinitions.java
+    ¦                   ¦           
+    ¦                   +---security
+    ¦                   ¦   +---config
+    ¦                   ¦       +---annotation
+    ¦                   ¦           +---authentication
+    ¦                   ¦           ¦   +---configuration
+    ¦                   ¦           ¦           AuthenticationConfiguration__Autowiring.java
+    ¦                   ¦           ¦           AuthenticationConfiguration__BeanDefinitions.java
+    ¦                   ¦           ¦           
+    ¦                   ¦           +---configuration
+    ¦                   ¦           ¦       ObjectPostProcessorConfiguration__BeanDefinitions.java
+    ¦                   ¦           ¦       
+    ¦                   ¦           +---web
+    ¦                   ¦               +---configuration
+    ¦                   ¦                       HttpSecurityConfiguration__Autowiring.java
+    ¦                   ¦                       HttpSecurityConfiguration__BeanDefinitions.java
+    ¦                   ¦                       ObservationConfiguration__BeanDefinitions.java
+    ¦                   ¦                       WebMvcSecurityConfiguration__BeanDefinitions.java
+    ¦                   ¦                       WebSecurityConfiguration__Autowiring.java
+    ¦                   ¦                       WebSecurityConfiguration__BeanDefinitions.java
+    ¦                   ¦                       
+    ¦                   +---transaction
+    ¦                   ¦   +---annotation
+    ¦                   ¦           AbstractTransactionManagementConfiguration__BeanDefinitions.java
+    ¦                   ¦           ProxyTransactionManagementConfiguration__Autowiring.java
+    ¦                   ¦           ProxyTransactionManagementConfiguration__BeanDefinitions.java
+    ¦                   ¦           
+    ¦                   +---web
+    ¦                       +---filter
+    ¦                               ServletRequestPathFilter__BeanDefinitions.java
+    ¦                               
+    +---surefire-reports
+    ¦       com.uade.tpo.e_commerce3.ECommerce3ApplicationTests.txt
+    ¦       TEST-com.uade.tpo.e_commerce3.ECommerce3ApplicationTests.xml
+    ¦       
+    +---test-classes
+        +---com
+            +---uade
+                +---tpo
+                    +---e_commerce3
+                            ECommerce3ApplicationTests.class
+                            

@@ -1,0 +1,34 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Vite
+dist/
+
+# Java / Maven
+target/
+*.class
+
+# IDE
+.vscode/
+.idea/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+
+# Variables de entorno
+.env
+.env.local
+
+# MySQL locales
+*.sql
+
+# VMware (si el repo está dentro de la VM)
+*.lck
