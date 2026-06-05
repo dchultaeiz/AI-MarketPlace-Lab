@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import defaultImage from '../assets/imgXdefault.jpg';
-import Card from '../ejemplos/Card';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [category, setCategory] = useState(null); // Estado para la categoría seleccionada
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        //  const response = await fetch(`http://localhost:8080/api/productos`, {
-        const response = await fetch(`http://localhost:8080/api/productos${category ? `?categoria=${category}` : ''}`, {
-          // http://localhost:8080/api/productos?categoria=Electrónica
+        // const response = await fetch(`http://localhost:3000/productos`);
+        const response = await fetch('http://localhost:8080/api/productos', {
           // Especificamos el método HTTP a utilizar
           method: 'GET',
           
@@ -51,44 +48,23 @@ const ProductList = () => {
     };
 
     fetchProducts();
-  }, [category]); // El efecto se vuelve a ejecutar cada vez que 'category' cambie
+  }, []);
 
   // --- Manejo de estados de carga y error ---
   // Si 'loading' es true, se muestra un mensaje de carga.
   // Esto previene que el usuario vea una pantalla vacía o con datos incompletos
   // mientras se esperan los datos de la API.
-  // if (loading) return <div>Cargando productos...</div>;
-  //TODO: ssanchez - utilizar operador ternario 
-  if (loading) return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <div style={{
-        border: '4px solid #f3f3f3',
-        borderTop: '4px solid #2D3277',
-        borderRadius: '50%',
-        width: '50px',
-        height: '50px',
-        animation: 'spin 1s linear infinite'
-      }} />
-      <style>{`
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-      `}</style>
-    </div>
-  );
+  if (loading) return <div>Cargando productos...</div>;
 
   // Si 'error' tiene un valor (no es null), significa que la petición falló.
   // Se muestra un mensaje de error al usuario en lugar del componente principal.
   // Esto asegura que la aplicación no se rompa y el usuario esté informado del problema.
-  //TODO: ssanchez - utilizar operador ternario 
   if (error) return <div>Error: {error}</div>;
 
   return (
     <div>
       <h1>Lista de Productos</h1>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '1rem', padding: '1rem' }}>
-        {/* produts.map(product => ("muestra el producto con html") */}
         {products.map(product => (
           <Link 
             to={`/products/${product.id}`} 
@@ -97,7 +73,6 @@ const ProductList = () => {
           >
             <div style={{ 
               border: '1px solid #ddd',
-              backgroundColor: 'lightgray',
               borderRadius: '8px',
               padding: '1rem',
               display: 'flex',
@@ -129,7 +104,6 @@ const ProductList = () => {
           </Link>
         ))}
       </div>
-      
     </div>
   );
 };

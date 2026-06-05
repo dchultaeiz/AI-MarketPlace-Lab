@@ -8,32 +8,33 @@ export const authService = {
    * @throws {Error} - Lanza un error si las credenciales son incorrectas.
    */
   login: async (credentials) => {
-    console.log('Simulando login con:', credentials);
+  console.log('Simulando login con:', credentials);
 
-    // Simulamos una pequeña demora de red para que parezca más real.
-    await new Promise(resolve => setTimeout(resolve, 500));
+  await new Promise(resolve => setTimeout(resolve, 500));
 
-    // --- Lógica de la simulación ---
-    // Comprobamos las credenciales contra valores fijos.
-    // Usuario: user@example.com
-    // Contraseña: password
-    if (credentials.email === 'user@example.com' && credentials.password === 'password') {
-      // Si las credenciales son correctas, devolvemos un usuario y un token falsos.
-      const fakeUser = {
-        id: 1,
-        nombre: 'Usuario de Prueba',
-        email: 'user@example.com',
-      };
-      const fakeToken = 'fake-jwt-token-for-simulation-12345';
-      
-      console.log('Login simulado ¡exitoso!');
-      return { user: fakeUser, token: fakeToken };
-    } else {
-      // Si las credenciales son incorrectas, lanzamos un error, como haría un servidor real.
-      console.log('Login simulado ¡fallido!');
-      throw new Error('Usuario o contraseña incorrectos.');
-    }
-  },
+  if (
+    credentials.email === 'user@example.com' &&
+    credentials.password === 'password'
+  ) {
+    const fakeUser = {
+      id: 1,
+      nombre: 'Usuario de Prueba',
+      email: 'user@example.com'
+    };
+
+    const fakeToken = 'fake-jwt-token-for-simulation-12345';
+
+    localStorage.setItem('token', fakeToken);
+    localStorage.setItem('isAuthenticated', 'true');
+
+    return {
+      user: fakeUser,
+      token: fakeToken
+    };
+  }
+
+  throw new Error('Usuario o contraseña incorrectos.');
+},
 
   /**
    * Simula la obtención del usuario actual a partir de un token.

@@ -13,7 +13,6 @@ const Home = () => {
       {/* link en react*/}
       <br />
       <Link to="/products">Ir a la lista de productos</Link>
-      {/* <Link to="/cart">Ir al carrito</Link> */}
     </div>
   );
 };

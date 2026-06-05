@@ -2,70 +2,100 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const LoginForm = () => {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const [loggedIn, setLoggedIn] = useState(false);
 
   const handleLogin = async (event) => {
-    event.preventDefault(); // Evita la recarga de la página por defecto
+   console.log("ENTRO AL LOGIN");
+    event.preventDefault();
 
-    setLoading(true);
-    setError(null);
+    setError('');
 
     try {
-      const response = await axios.post('/api/login', {
-        username: username,
-        password: password,
-      });
+      const response = await axios.post(
+        'http://localhost:8080/api/auth/login',
+        {
+          email,
+          password
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      );
 
-      // Si la autenticación es exitosa, el servidor podría devolver un token o información del usuario
-      console.log('Inicio de sesión exitoso:', response.data);
+      const token = response.data;
+
+      localStorage.setItem('token', token);
+      localStorage.setItem('isAuthenticated', 'true');
+
       setLoggedIn(true);
-      // Aquí podrías guardar el token en el almacenamiento local, actualizar el estado global, etc.
 
-    } catch (error) {
-      console.error('Error al iniciar sesión:', error.response ? error.response.data : error.message);
-      setError(error.response?.data?.message || 'Error al iniciar sesión. Por favor, inténtalo de nuevo.');
+    } catch (err) {
+      console.error(err);
+      setError('Usuario o contraseña incorrectos.');
       setLoggedIn(false);
-    } finally {
-      setLoading(false);
     }
   };
 
   if (loggedIn) {
-    return <p>¡Has iniciado sesión correctamente!</p>;
+    return (
+      <div>
+        <h2>Login exitoso</h2>
+      </div>
+    );
   }
 
   return (
-    <form onSubmit={handleLogin}>
+    <div>
       <h2>Iniciar Sesión</h2>
-      <div>
-        <label htmlFor="username">Usuario:</label>
-        <input
-          type="text"
-          id="username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="password">Contraseña:</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-      </div>
-      <button type="submit" disabled={loading}>
-        {loading ? 'Iniciando Sesión...' : 'Iniciar Sesión'}
-      </button>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-    </form>
+
+      {error && (
+        <div
+          style={{
+            color: 'red',
+            marginBottom: '10px'
+          }}
+        >
+          {error}
+        </div>
+      )}
+
+      <form onSubmit={handleLogin}>
+        <div>
+          <label>Email:</label>
+          <br />
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label>Contraseña:</label>
+          <br />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+
+        <br />
+
+        <button type="submit">
+          Iniciar Sesión
+        </button>
+      </form>
+    </div>
   );
 };
 

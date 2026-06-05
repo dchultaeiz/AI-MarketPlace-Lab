@@ -3,13 +3,10 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const navigate = useNavigate();
-
   const [credentials, setCredentials] = useState({
     email: '',
     password: ''
   });
-
-  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     setCredentials({
@@ -18,35 +15,12 @@ const Login = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setError('');
-
-    try {
-      const response = await fetch('http://localhost:8080/api/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          email: credentials.email,
-          password: credentials.password
-        })
-      });
-
-      if (!response.ok) {
-        throw new Error('Usuario o contraseña incorrectos.');
-      }
-
-      const token = await response.text();
-
-      localStorage.setItem('token', token);
-      localStorage.setItem('isAuthenticated', 'true');
-
-      navigate('/checkout');
-    } catch (err) {
-      setError(err.message || 'Error al iniciar sesión.');
-    }
+    // Aquí iría la lógica real de autenticación
+    localStorage.setItem('isAuthenticated', 'true');
+    // Redirigir al checkout después del login
+    navigate('/checkout');
   };
 
   return (
@@ -57,22 +31,16 @@ const Login = () => {
       marginTop: '2rem'
     }}>
       <h1 style={{ marginBottom: '1.5rem' }}>Iniciar Sesión</h1>
-
-      {error && (
-        <div style={{
-          backgroundColor: '#f8d7da',
-          color: '#842029',
-          padding: '0.75rem',
-          borderRadius: '4px',
-          marginBottom: '1rem'
-        }}>
-          {error}
-        </div>
-      )}
-
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <div>
-          <label htmlFor="email" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500' }}>
+          <label 
+            htmlFor="email" 
+            style={{ 
+              display: 'block', 
+              marginBottom: '0.5rem',
+              fontWeight: '500'
+            }}
+          >
             Correo electrónico
           </label>
           <input
@@ -82,12 +50,24 @@ const Login = () => {
             value={credentials.email}
             onChange={handleChange}
             required
-            style={{ width: '100%', padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
+            style={{
+              width: '100%',
+              padding: '0.5rem',
+              borderRadius: '4px',
+              border: '1px solid #ccc'
+            }}
           />
         </div>
         
         <div>
-          <label htmlFor="password" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500' }}>
+          <label 
+            htmlFor="password"
+            style={{ 
+              display: 'block', 
+              marginBottom: '0.5rem',
+              fontWeight: '500'
+            }}
+          >
             Contraseña
           </label>
           <input
@@ -97,7 +77,12 @@ const Login = () => {
             value={credentials.password}
             onChange={handleChange}
             required
-            style={{ width: '100%', padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
+            style={{
+              width: '100%',
+              padding: '0.5rem',
+              borderRadius: '4px',
+              border: '1px solid #ccc'
+            }}
           />
         </div>
 
