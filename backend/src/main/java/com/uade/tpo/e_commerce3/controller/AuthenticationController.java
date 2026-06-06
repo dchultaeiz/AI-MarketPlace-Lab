@@ -1,11 +1,10 @@
 package com.uade.tpo.e_commerce3.controller;
-
+import com.uade.tpo.e_commerce3.dto.AuthResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.uade.tpo.e_commerce3.dto.LoginRequest;
 import com.uade.tpo.e_commerce3.dto.RegisterRequest;
 import com.uade.tpo.e_commerce3.service.AuthenticationService;
@@ -26,10 +25,11 @@ public class AuthenticationController {
         //usuarioRegistroDTO tiene los datos del usuario a registrar, como nombre, email y contraseña
         return ResponseEntity.ok(authenticationService.register(usuarioRegistroDTO));
     }
-
+    
     //http://localhost:8080/api/auth/login con metodo post http, enviar un body -> loguear un usuario
     @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody LoginRequest request) {
-        return ResponseEntity.ok(authenticationService.authenticate(request));
+    public ResponseEntity<AuthResponse> authenticate(@RequestBody LoginRequest loginRequest) {
+        //loginRequest tiene el email y la contraseña del usuario que intenta loguearse
+        return ResponseEntity.ok(authenticationService.authenticate(loginRequest));
     }
 }

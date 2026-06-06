@@ -1,5 +1,6 @@
 package com.uade.tpo.e_commerce3.service;
 
+import com.uade.tpo.e_commerce3.dto.AuthResponse;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -122,7 +123,7 @@ public class AuthenticationService {
      * @throws BadCredentialsException si la contraseña proporcionada es incorrecta
      * @throws NoSuchElementException si no se encuentra el usuario después de la autenticación exitosa
      */
-    public String authenticate(LoginRequest request) {
+    public AuthResponse authenticate(LoginRequest request) {
         
         // authenticationManager definido en SecurityConfig 
         // este método valida las credenciales  authenticationManager.authenticate
@@ -151,6 +152,15 @@ public class AuthenticationService {
         //
         //TODO: devolver un dto
         // return new AuthResponse(tokenStr, "Bearer", user.getEmail());
-        return jwtUtil.generateToken(user.getEmail(), roles);
+        String token = jwtUtil.generateToken(user.getEmail(), roles);
+
+        return AuthResponse.builder()
+                .token(token)
+                .id(user.getId())
+                .nombre(user.getNombre())
+                .apellido(user.getApellido())
+                .email(user.getEmail())
+                .role(user.getRole())
+                .build();
     }
 }

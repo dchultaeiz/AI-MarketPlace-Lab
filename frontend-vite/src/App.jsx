@@ -1,9 +1,10 @@
+import LoginAdmin from './components/LoginAdmin.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-
+import Login from './components/Login.jsx';
 import { AuthProvider } from './features/auth/context/AuthContext';
 import { CartProvider } from './hooks/useContext/CartProvider';
-
+import ProductCreate from './components/productCreate';
 import Home from './components/Home';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
@@ -26,7 +27,8 @@ function App() {
             <Route path="/products" element={<ProductList />} />
             <Route path="/products/:id" element={<ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/login" element={<LoginJWTContext />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/login-admin" element={<LoginAdmin />} />
             <Route
               path="/checkout"
               element={
@@ -35,6 +37,15 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route
+              path="/productos/nuevo"
+              element={
+                <ProtectedRoute loginPath="/login-admin">
+                  <ProductCreate />
+                </ProtectedRoute>
+              }
+            />
+            <Route path="/login-admin" element={<LoginAdmin />} />
             <Route path="/formValido" element={<FormularioValidado />} />
             <Route path="/formPago" element={<FormularioPago />} />
             <Route path="/formReact" element={<FormularioPagoReactForm />} />

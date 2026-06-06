@@ -2,14 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Checkout = () => {
+  const userGuardado = localStorage.getItem('user');
+  const user = userGuardado ? JSON.parse(userGuardado) : null;
+
   return (
     <div style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
+
+      <h3>
+        {user ? `Hola ${user.nombre}` : 'No hay usuario logueado'}
+      </h3>
+
       <h1>Confirmar Compra</h1>
+
       <div style={{ marginBottom: '1rem' }}>
         <h2>Resumen de la compra</h2>
-        {/* Aquí irá el resumen del carrito */}
       </div>
-      <Link 
+
+      <Link
         to="/cart"
         style={{
           backgroundColor: '#2D3277',
@@ -25,6 +34,7 @@ const Checkout = () => {
       >
         Volver al carrito
       </Link>
+
       <button
         onClick={() => alert('¡Compra finalizada!')}
         style={{

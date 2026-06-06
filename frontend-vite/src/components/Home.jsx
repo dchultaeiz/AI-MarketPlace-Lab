@@ -7,13 +7,9 @@ const Home = () => {
       <h1>Bienvenidos a la página de inicio</h1>
       <p>Esta es una página de ejemplo para mostrar el routing</p>
 
-      {/* no es react */}
-      <a href="/products">productos</a>
-
-      {/* link en react*/}
-      <br />
       <Link to="/products">Ir a la lista de productos</Link>
-      {/* <Link to="/cart">Ir al carrito</Link> */}
+      <br />
+      <Link to="/productos/nuevo">Alta de producto</Link>
     </div>
   );
 };

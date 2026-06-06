@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../features/auth/context/AuthContext';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { useAuth } from '../../features/auth/context/AuthContext';
 
 const LoginJWTContext = () => {
   const navigate = useNavigate();
+  
+  const location = useLocation();
   const { login, loading, error } = useAuth();
+
+  const from = location.state?.from?.pathname || '/checkout';
+
   const [credentials, setCredentials] = useState({
     email: '',
     password: ''
@@ -19,9 +24,11 @@ const LoginJWTContext = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const success = await login(credentials);
+
     if (success) {
-      navigate('/checkout');
+      navigate(from, { replace: true });
     }
   };
 
@@ -33,6 +40,7 @@ const LoginJWTContext = () => {
       marginTop: '2rem'
     }}>
       <h1 style={{ marginBottom: '1.5rem' }}>Iniciar Sesión</h1>
+
       {error && (
         <div style={{
           padding: '0.75rem',
@@ -44,16 +52,10 @@ const LoginJWTContext = () => {
           {error}
         </div>
       )}
+
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <div>
-          <label 
-            htmlFor="email" 
-            style={{ 
-              display: 'block', 
-              marginBottom: '0.5rem',
-              fontWeight: '500'
-            }}
-          >
+          <label htmlFor="email" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500' }}>
             Correo electrónico
           </label>
           <input
@@ -64,24 +66,12 @@ const LoginJWTContext = () => {
             onChange={handleChange}
             required
             disabled={loading}
-            style={{
-              width: '100%',
-              padding: '0.5rem',
-              borderRadius: '4px',
-              border: '1px solid #ccc'
-            }}
+            style={{ width: '100%', padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
           />
         </div>
-        
+
         <div>
-          <label 
-            htmlFor="password"
-            style={{ 
-              display: 'block', 
-              marginBottom: '0.5rem',
-              fontWeight: '500'
-            }}
-          >
+          <label htmlFor="password" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500' }}>
             Contraseña
           </label>
           <input
@@ -92,12 +82,7 @@ const LoginJWTContext = () => {
             onChange={handleChange}
             required
             disabled={loading}
-            style={{
-              width: '100%',
-              padding: '0.5rem',
-              borderRadius: '4px',
-              border: '1px solid #ccc'
-            }}
+            style={{ width: '100%', padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
           />
         </div>
 

@@ -43,6 +43,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem('token', data.token);
         setIsAuthenticated(true);
         setUser(data.user || null);
+        localStorage.setItem('user', JSON.stringify(data.user));
         return true;
       }
       return false;
@@ -55,11 +56,14 @@ export const AuthProvider = ({ children }) => {
   };
 
   const logout = () => {
-    setToken(null);
-    localStorage.removeItem('token');
-    setIsAuthenticated(false);
-    setUser(null);
-  };
+  setToken(null);
+  setUser(null);
+  setIsAuthenticated(false);
+
+  localStorage.removeItem('token');
+  localStorage.removeItem('user');
+  localStorage.removeItem('isAuthenticated');
+};
 
   return (
     <AuthContext.Provider 

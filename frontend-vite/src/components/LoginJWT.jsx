@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 
 const LoginJWT = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || '/checkout';
   const [credentials, setCredentials] = useState({
     email: '',
     password: ''
@@ -36,7 +38,7 @@ const LoginJWT = () => {
         axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
         
         // Redirigir al usuario
-        navigate('/checkout');
+        navigate(from, { replace: true });
       }
     } catch (err) {
       setError(err.response?.data?.message || 'Error al iniciar sesión. Por favor, intente nuevamente.');
