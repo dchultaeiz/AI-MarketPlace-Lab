@@ -10,6 +10,9 @@ const Home = () => {
       <Link to="/products">Ir a la lista de productos</Link>
       <br />
       <Link to="/productos/nuevo">Alta de producto</Link>
+      <br />
+      <Link to="/demo-cloud">Consultar Azure Function</Link>
+      <br />      
     </div>
   );
 };

@@ -7,6 +7,7 @@ import { CartProvider } from './hooks/useContext/CartProvider';
 import ProductCreate from './components/productCreate';
 import Home from './components/Home';
 import ProductList from './components/ProductList';
+import DemoCloudStatus from './components/DemoCloudStatus.jsx';
 import ProductDetail from './components/ProductDetail';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
@@ -28,6 +29,7 @@ function App() {
             <Route path="/products/:id" element={<ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/demo-cloud" element={<DemoCloudStatus />} />
             <Route path="/login-admin" element={<LoginAdmin />} />
             <Route
               path="/checkout"
